@@ -1,2 +1,10 @@
-# Mifin-Demo-Project
-This is my demo project for Mifin that will showcase my skills as front-end developer, particularly in creating user-friendly and visually appealing interfaces using WordPress
+# SJ Wordpress Demo Project Theme (Mifin)
+This is a bespoke demo project theme that showcases a smooth and intuitive UI/UX of a Wordpress checkout process with the ability to check user authentication. 
+
+# 🚀 Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/SharmJapay/Mifin-Demo-Project
+```
