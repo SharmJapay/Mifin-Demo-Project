@@ -9,10 +9,16 @@ License URI: LICENSE
 
 == Description ==
 
-A custom Wordpress Theme that implements checkout flow with specific requirements.
+This is a bespoke demo project theme that showcases a smooth and intuitive UI/UX of a Wordpress checkout process with the ability to check user authentication. 
 
 == Installation ==
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
+
+== Frequently Asked Questions ==
+
+= Does this theme support any plugins? =
+
+SJ Demo Theme includes support for WooCommerce.

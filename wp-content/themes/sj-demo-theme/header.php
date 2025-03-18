@@ -25,7 +25,7 @@
             <?php  } ?>
         </div>
 
-        <!-- Inserts the Header Menu -->
+        <!-- Displays the Header Menu -->
         <nav>
             <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
         </nav>
