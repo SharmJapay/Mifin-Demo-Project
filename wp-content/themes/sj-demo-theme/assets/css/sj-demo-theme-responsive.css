@@ -1,0 +1,46 @@
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header .navbar {
+        flex-direction: row;
+        width: 100%;
+        padding: 0px 30px;
+    }
+    
+    header .navbar .menu-toggle {
+        display: block;
+    }
+
+    header .navbar nav {
+        display: none;
+    }
+
+    header .navbar nav.active {
+        display: flex;
+    }
+
+    header .navbar ul.menu {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #eeeeee;
+        text-align: center;
+        z-index: 10;
+    }
+
+    header .navbar ul.menu li {
+        margin: 10px 0;
+    }
+
+    header .navbar ul.menu li a {
+        text-decoration: none;
+        color: #04295e;
+        font-weight: bold;
+    }
+
+    header .navbar ul.menu li a:hover,
+    header .navbar ul.menu li a:focus {
+        color: #175bb9;
+    }
+}

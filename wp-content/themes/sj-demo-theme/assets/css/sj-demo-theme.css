@@ -1,0 +1,109 @@
+/* Navigation container Header and Footer*/
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #e4c61b;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #011126;
+    padding: 30px 50px;
+    color: #fff;
+}
+
+header .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 35px;
+    max-width: 1320px;
+}
+
+header .navbar ul.menu ,
+footer nav ul.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul.menu  { 
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+header .navbar ul.menu li,
+footer nav ul.menu li {
+    margin: 0 10px;
+}
+
+header .navbar ul.menu li a,
+footer nav ul.menu li a {
+    text-decoration: none;
+    color: #04295e;
+    font-weight: bold;
+}
+
+footer nav ul.menu li a {
+    color: #fff;
+}
+
+header .navbar ul.menu li a:hover,
+header .navbar ul.menu li a:focus {
+    color: #175bb9;
+}
+
+footer nav ul.menu li a:hover,
+footer nav ul.menu li a:focus {
+    color: #FFEE58;
+}
+
+/* Logo and Title Style */
+header .navbar .logo img {
+    height: auto;
+    width: 80px;
+    margin: 0;
+}
+
+header .navbar  .logo h1 a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+header .navbar  .logo h1 a:hover,
+header .navbar  .logo h1 a:focus {
+    color: #d6d6d6;
+}
+
+/* Mobile menu button */
+header .navbar .menu-toggle {
+    display: none;
+    padding: 0;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+header .navbar  .menu-toggle:hover,
+header .navbar  .menu-toggle:focus {
+    color: #eeeeee;
+}
+
+/* Button Style */
+.wp-block-button__link{
+    font-weight: 400;
+}
+
+.wp-block-button__link:hover {
+    border-color: #cf2e2e !important;
+    color: #fff !important;
+}
