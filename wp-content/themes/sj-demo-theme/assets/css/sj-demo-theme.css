@@ -24,39 +24,44 @@ header .navbar {
     max-width: 1320px;
 }
 
-header .navbar .menu ul,
-footer nav .menu ul {
+header .navbar ul.menu ,
+footer nav ul.menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-footer nav .menu ul { 
+footer nav ul.menu  { 
     justify-content: center;
     margin-bottom: 10px;
     flex-wrap: wrap;
 }
 
-header .navbar .menu ul li,
-footer nav .menu ul li {
+header .navbar ul.menu li,
+footer nav ul.menu li {
     margin: 0 10px;
 }
 
-header .navbar .menu ul li a,
-footer nav .menu ul li a {
+header .navbar ul.menu li a,
+footer nav ul.menu li a {
     text-decoration: none;
     color: #04295e;
     font-weight: bold;
 }
 
-footer nav .menu ul li a {
+footer nav ul.menu li a {
     color: #fff;
 }
 
-header .navbar .menu ul li a:hover,
-header .navbar .menu ul li a:focus {
+header .navbar ul.menu li a:hover,
+header .navbar ul.menu li a:focus {
     color: #175bb9;
+}
+
+footer nav ul.menu li a:hover,
+footer nav ul.menu li a:focus {
+    color: #FFEE58;
 }
 
 /* Logo and Title Style */
@@ -91,4 +96,14 @@ header .navbar .menu-toggle {
 header .navbar  .menu-toggle:hover,
 header .navbar  .menu-toggle:focus {
     color: #eeeeee;
+}
+
+/* Button Style */
+.wp-block-button__link{
+    font-weight: 400;
+}
+
+.wp-block-button__link:hover {
+    border-color: #cf2e2e !important;
+    color: #fff !important;
 }

@@ -5,7 +5,7 @@
  */
 ?>
 
-<footer>
+<footer id="sj-footer" class="site-footer grid-container">
     <nav>
         <?php wp_nav_menu(array('theme_location' => 'footer-menu')); ?>
     </nav>

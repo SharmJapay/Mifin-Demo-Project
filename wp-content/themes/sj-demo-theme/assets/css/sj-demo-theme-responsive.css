@@ -18,7 +18,7 @@
         display: flex;
     }
 
-    header .navbar .menu ul {
+    header .navbar ul.menu {
         flex-direction: column;
         width: 100%;
         position: absolute;
@@ -29,18 +29,18 @@
         z-index: 10;
     }
 
-    header .navbar .menu ul li {
+    header .navbar ul.menu li {
         margin: 10px 0;
     }
 
-    header .navbar .menu ul li a {
+    header .navbar ul.menu li a {
         text-decoration: none;
         color: #04295e;
         font-weight: bold;
     }
 
-    header .navbar .menu ul li a:hover,
-    header .navbar .menu ul li a:focus {
+    header .navbar ul.menu li a:hover,
+    header .navbar ul.menu li a:focus {
         color: #175bb9;
     }
 }

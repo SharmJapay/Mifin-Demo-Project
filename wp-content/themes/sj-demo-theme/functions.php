@@ -55,8 +55,8 @@ function sj_demo_theme_setup() {
 	add_theme_support(
 		'custom-logo',
 		array(
-			'height'      => 100,
-			'width'       => 100,
+			'height'      => 250,
+			'width'       => 250,
 			'flex-width'  => true,
 			'flex-height' => true,
 		)
@@ -79,14 +79,6 @@ function sj_demo_theme_setup() {
 
 	// Add theme support for the block tool. Requires Gutenberg 14.0 or greater for now.
 	add_theme_support( 'appearance-tools' ); 
-
-	// Register menus
-	register_nav_menus(
-		array(
-			'primary_menu' => __( 'Primary Menu', 'sj-demo-theme' ),
-			'footer_menu'  => __( 'Footer Menu', 'sj-demo-theme' ),
-		)
-	);
 
 }
 add_action( 'after_setup_theme', 'sj_demo_theme_setup' );
@@ -155,3 +147,16 @@ function sj_demo_theme_styles_scripts() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'sj_demo_theme_styles_scripts' );
+
+/**
+ * Registering custom menus.
+ */
+function sj_demo_theme_register_nav_menus () {
+	register_nav_menus(
+		array(
+			'primary-menu' => __( 'Primary Menu', 'sj-demo-theme' ),
+			'footer-menu'  => __( 'Footer Menu', 'sj-demo-theme' ),
+		)
+	);
+}
+add_action( 'init', 'sj_demo_theme_register_nav_menus' );

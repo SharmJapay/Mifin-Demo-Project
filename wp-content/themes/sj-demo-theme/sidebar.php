@@ -3,7 +3,6 @@
  * Handles Sidebar Menu Rendering.
  * @package SJ_Demo_Theme
  */
-?>
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;

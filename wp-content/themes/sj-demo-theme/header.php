@@ -15,7 +15,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header>
+<header id="sj-header" class="site-header grid-container">
     <div class="navbar">
         <div class="logo">
             <?php  if ( has_custom_logo() ) { 
@@ -25,6 +25,7 @@
             <?php  } ?>
         </div>
 
+        <!-- Inserts the Header Menu -->
         <nav>
             <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
         </nav>
