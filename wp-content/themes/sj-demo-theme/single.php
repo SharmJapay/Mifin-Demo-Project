@@ -23,7 +23,7 @@
             </div>
         </article>
     <?php endwhile; else : ?>
-        <p><?php esc_html_e('This post does not exist.', 'custom-checkout-theme'); ?></p>
+        <p><?php esc_html_e('This post does not exist.', 'sj-demo-theme'); ?></p>
     <?php endif; ?>
 </div>
 

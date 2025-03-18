@@ -36,7 +36,7 @@
             <p><?php the_excerpt(); ?></p>
         </article>
     <?php endwhile; else : ?>
-        <p><?php esc_html_e('No posts found', 'custom-checkout-theme'); ?></p>
+        <p><?php esc_html_e('No posts found', 'sj-demo-theme'); ?></p>
     <?php endif; ?>
 
     <div class="pagination">

@@ -22,7 +22,7 @@
         </div>
 
     <?php else : ?>
-        <p><?php esc_html_e('No results found. Try searching again:', 'custom-checkout-theme'); ?></p>
+        <p><?php esc_html_e('No results found. Try searching again:', 'sj-demo-theme'); ?></p>
         <?php get_search_form(); ?>
     <?php endif; ?>
 </div>
