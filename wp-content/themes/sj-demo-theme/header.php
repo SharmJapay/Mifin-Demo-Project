@@ -16,7 +16,7 @@
 </head>
 <body <?php body_class(); ?>>
 <header>
-    <div class="container">
+    <div class="navbar">
         <div class="logo">
             <?php  if ( has_custom_logo() ) { 
                 the_custom_logo();?>
@@ -28,5 +28,7 @@
         <nav>
             <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
         </nav>
+
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
     </div>
 </header>

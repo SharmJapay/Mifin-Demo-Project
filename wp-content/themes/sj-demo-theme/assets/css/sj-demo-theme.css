@@ -1,0 +1,94 @@
+/* Navigation container Header and Footer*/
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #e4c61b;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #011126;
+    padding: 30px 50px;
+    color: #fff;
+}
+
+header .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 35px;
+    max-width: 1320px;
+}
+
+header .navbar .menu ul,
+footer nav .menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav .menu ul { 
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+header .navbar .menu ul li,
+footer nav .menu ul li {
+    margin: 0 10px;
+}
+
+header .navbar .menu ul li a,
+footer nav .menu ul li a {
+    text-decoration: none;
+    color: #04295e;
+    font-weight: bold;
+}
+
+footer nav .menu ul li a {
+    color: #fff;
+}
+
+header .navbar .menu ul li a:hover,
+header .navbar .menu ul li a:focus {
+    color: #175bb9;
+}
+
+/* Logo and Title Style */
+header .navbar .logo img {
+    height: auto;
+    width: 80px;
+    margin: 0;
+}
+
+header .navbar  .logo h1 a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+header .navbar  .logo h1 a:hover,
+header .navbar  .logo h1 a:focus {
+    color: #d6d6d6;
+}
+
+/* Mobile menu button */
+header .navbar .menu-toggle {
+    display: none;
+    padding: 0;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+header .navbar  .menu-toggle:hover,
+header .navbar  .menu-toggle:focus {
+    color: #eeeeee;
+}
