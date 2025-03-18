@@ -65,6 +65,21 @@ function sj_demo_theme_setup() {
     // Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
+	// Theme support for typography.fontSizes.
+	add_theme_support( 'editor-font-sizes', array() ); 
+
+	// Theme support for typography.lineHeight.
+    add_theme_support( 'custom-line-height' ); 
+
+	// Theme support for spacing.
+	add_theme_support( 'custom-spacing' ); 
+
+	// Theme support for color.gradients.
+	add_theme_support( 'editor-gradient-presets', array() ); 
+
+	// Add theme support for the block tool. Requires Gutenberg 14.0 or greater for now.
+	add_theme_support( 'appearance-tools' ); 
+
 	// Register menus
 	register_nav_menus(
 		array(
@@ -105,10 +120,18 @@ function sj_demo_theme_styles_scripts() {
 		_S_VERSION 
 	);
 
-	// Custom CSS
+	// Main CSS
 	wp_enqueue_style( 
 		'sj-demo-theme-style', 
-		get_parent_theme_file_uri() . '/assets/css/sj-demo-theme.css', 
+		get_parent_theme_file_uri('/assets/css/sj-demo-theme.css'), 
+		array(), 
+		_S_VERSION 
+	);
+
+	// Responsive CSS
+	wp_enqueue_style( 
+		'sj-demo-theme-responsive-style', 
+		get_parent_theme_file_uri('/assets/css/sj-demo-theme-responsive.css'), 
 		array(), 
 		_S_VERSION 
 	);
@@ -122,7 +145,7 @@ function sj_demo_theme_styles_scripts() {
 		true
 	);
 
-	// Custom Script
+	// Main Script
 	wp_enqueue_script( 
 		'sj-demo-theme-script', 
 		get_template_directory_uri() . '/assets/js/sj-demo-theme.js', 
