@@ -5,26 +5,33 @@
  */
 ?>
 
-<div class="container">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <article>
-            <h1><?php the_title(); ?></h1>
-            <p><strong>Published on:</strong> <?php echo get_the_date(); ?> by <?php the_author(); ?></p>
+<?php get_header(); ?>
 
-            <?php the_content(); ?>
+    <main id="primary" class="site-main">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-            <div class="post-navigation">
-                <div class="prev"><?php previous_post_link(); ?></div>
-                <div class="next"><?php next_post_link(); ?></div>
-            </div>
+            <article>
+                <h1><?php the_title(); ?></h1>
+                <p><strong>Published on:</strong> <?php echo get_the_date(); ?> by <?php the_author(); ?></p>
 
-            <div class="comments-section">
-                <?php comments_template(); ?>
-            </div>
-        </article>
-    <?php endwhile; else : ?>
-        <p><?php esc_html_e('This post does not exist.', 'sj-demo-theme'); ?></p>
-    <?php endif; ?>
-</div>
+                <?php the_content(); ?>
 
-<?php get_footer(); ?>
+                <div class="post-navigation">
+                    <div class="prev"><?php previous_post_link(); ?></div>
+                    <div class="next"><?php next_post_link(); ?></div>
+                </div>
+
+                <div class="comments-section">
+                    <?php comments_template(); ?>
+                </div>
+            </article>
+            
+        <?php endwhile; else : ?>
+            <p><?php esc_html_e('This post does not exist.', 'sj-demo-theme'); ?></p>
+        <?php endif; ?>
+    </main><!-- #main -->
+
+
+<?php
+get_sidebar();
+get_footer();
