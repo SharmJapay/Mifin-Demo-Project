@@ -22,7 +22,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sj_demo_theme' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:',  'sj-demo-theme' ),
 				'after'  => '</div>',
 			)
 		);
@@ -36,7 +36,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'sj_demo_theme' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>',  'sj-demo-theme' ),
 						array(
 							'span' => array(
 								'class' => array(),

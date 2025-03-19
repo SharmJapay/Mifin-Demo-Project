@@ -43,13 +43,13 @@ if (post_password_required()) {
     <?php endif; ?>
 
     <?php if (!comments_open() && get_comments_number()) : ?>
-        <p class="no-comments"><?php esc_html_e('Comments are closed.', 'custom-checkout-theme'); ?></p>
+        <p class="no-comments"><?php esc_html_e('Comments are closed.',  'sj-demo-theme'); ?></p>
     <?php endif; ?>
 
     <?php
         comment_form(array(
-            'title_reply' => __('Leave a Comment', 'custom-checkout-theme'),
-            'label_submit' => __('Post Comment', 'custom-checkout-theme'),
+            'title_reply' => __('Leave a Comment',  'sj-demo-theme'),
+            'label_submit' => __('Post Comment',  'sj-demo-theme'),
             'class_submit' => 'submit-button',
             'comment_notes_before' => '',
             'comment_notes_after' => '',
