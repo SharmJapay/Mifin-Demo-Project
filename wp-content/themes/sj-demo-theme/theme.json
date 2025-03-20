@@ -709,7 +709,10 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var:preset|font-size|medium"
+					"fontSize": "var:preset|font-size|small",
+					"fontWeight": "500",
+					"letterSpacing": "1.4px",
+					"textTransform": "uppercase"
 				}
 			},
 			"caption": {

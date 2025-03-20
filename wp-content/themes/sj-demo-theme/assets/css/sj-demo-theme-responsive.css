@@ -1,5 +1,6 @@
 /* Responsive styles */
 @media screen and (max-width: 768px) {
+    /* General Navigation container Header and Footer*/
     header .navbar {
         flex-direction: row;
         width: 100%;
@@ -42,5 +43,35 @@
     header .navbar ul.menu li a:hover,
     header .navbar ul.menu li a:focus {
         color: #175bb9;
+    }
+
+    /* Woocommerce Homepage Product Listing */
+    .wp-block-woocommerce-product-collection  ul.wp-block-woocommerce-product-template {
+        margin: 0 0 1.5em 0 !important;
+    }
+
+    /* Woocommerce Hero Banner Button */
+    .wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
+        width: calc(40% - var(--wp--style--block-gap, .5em)* .75);
+    }
+
+    /* Woocommerce Product Header */
+    .woocommerce header.woocommerce-products-header {
+        margin: 20px 20px 0px;
+    }
+
+    /* Woocommerce Product Result Count */
+    .woocommerce p.woocommerce-result-count {
+        margin: 20px !important;
+    }
+
+    /* Woocommerce Product Sorting */
+    .woocommerce form.woocommerce-ordering {
+        margin: 20px !important;
+    }
+
+    /* Woocommerce Product Listing Block */
+    .woocommerce ul.products {
+        margin: 50px 20px !important;
     }
 }
