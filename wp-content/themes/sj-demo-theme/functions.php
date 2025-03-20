@@ -244,7 +244,7 @@ add_action('template_redirect','check_if_logged_in');
  */
 
 function activate_authentication_popup() {
-    if (is_checkout() && !is_user_logged_in()) {
+    if ( !is_user_logged_in()) {
         require get_template_directory() . '/woocommerce/checkout/auth-popup.php';
     }
 
