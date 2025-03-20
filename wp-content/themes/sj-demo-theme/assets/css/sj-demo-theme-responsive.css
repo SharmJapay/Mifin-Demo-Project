@@ -45,6 +45,11 @@
         color: #175bb9;
     }
 
+    /* Woocommerce Breadcrumbs */
+    .woocommerce .woocommerce-breadcrumb {
+        padding: 20px !important;
+    }
+
     /* Woocommerce Homepage Product Listing */
     .wp-block-woocommerce-product-collection  ul.wp-block-woocommerce-product-template {
         margin: 0 0 1.5em 0 !important;
@@ -73,5 +78,70 @@
     /* Woocommerce Product Listing Block */
     .woocommerce ul.products {
         margin: 50px 20px !important;
+    }
+
+    /* Woocommerce Product Page Onsale Icon*/
+    .woocommerce .product span.onsale {
+        padding: 0;
+        margin: 30px 0 0 50px;
+        background-color: #5ebe6a !important;
+    }
+
+    /* Woocommerce Single Product Gallery*/
+    .woocommerce .product .woocommerce-product-gallery {
+        margin: 20px ;
+        width: 95% !important;
+    }
+
+    /* Woocommerce Single Product Summary */
+    .woocommerce .entry-summary {
+        margin: 20px !important;
+        padding-left: 0px !important;  
+        width: 95% !important;
+    }
+
+    /* Woocommerce Single Product Tabs  */
+    .woocommerce .woocommerce-tabs {
+        margin: 0px !important;
+        padding-left: 0px !important;  
+        width: 95% !important;
+    }
+
+    .woocommerce .related.products { 
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+    .woocommerce .related.products h2 { 
+        margin: 20px !important;
+    }
+
+    /* Woocommerce Cart Page Block */
+    .woocommerce-cart .wp-block-product-new {
+        margin: 0 20px 20px !important;
+    }
+
+    /* Woocommerce My Account Block */
+    .woocommerce-account .woocommerce #customer_login.u-columns {
+        margin: 50px 0px !important;
+        padding: 0 20px !important;
+        width: 100% !important;
+    }
+    
+    .woocommerce-account .woocommerce .u-column1,
+    .woocommerce-account .woocommerce .u-column2 {
+        width: 100% !important;
+    }
+
+    .woocommerce-account .woocommerce .woocommerce-MyAccount-navigation {
+        width: 100% !important;
+    }
+    
+    .woocommerce-account .woocommerce .woocommerce-MyAccount-navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0 !important;
     }
 }

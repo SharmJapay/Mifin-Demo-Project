@@ -1,11 +1,18 @@
-# 💻 SJ Wordpress Demo Project Theme (Mifin)
+# 📂 SJ Wordpress Demo Project Theme (Mifin)
 
 This is a bespoke demo project theme that showcases a smooth and intuitive UI/UX of a Wordpress checkout process with the ability to check user authentication.
 
-## 🛠️ Tech and Tools Used
-- **XAMPP** - Local Development Environment
+## 💻 Tech
+- **HTML5** - used to design the front end portion of web pages using markup language
+- **CSS** - used to style our website.
+- **Javascript** - used to provide a dynamic behavior to our website.
+- **Jquery** -  a fast, small, and feature-rich JavaScript library
+- **PHP** - a server-side scripting language designed specifically for web development.
 - **WordPress** - Content Management System (CMS)
-- **Woocommerce** - Wordpress Plugin used to create the Online Stores
+- **Woocommerce** - Wordpress plugin used to create the Online Stores
+
+## 🛠️ Tools
+- **XAMPP** - Local Development Environment
 - **Git** - distributed version control system for tracking changes in source code during software development
 - **Github Desktop** - web-based Git repository hosting service
 - **Git Extensions** - standalone UI tool for managing git repositories.

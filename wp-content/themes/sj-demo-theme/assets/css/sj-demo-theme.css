@@ -210,7 +210,7 @@ button.single_add_to_cart_button:hover {
     color: #fff !important;
 }
 
-/* Woocommerce Product Header */
+/* Woocommerce Product Listing Header */
 .woocommerce header.woocommerce-products-header {
     background-color: #fff;
     color: #04295e;
@@ -230,13 +230,13 @@ button.single_add_to_cart_button:hover {
     color: #0c0c0c;
 }
 
-/* Woocommerce Product Result Count */
+/* Woocommerce Product Listing Result Count */
 .woocommerce p.woocommerce-result-count {
     margin-left: 100px !important;
     font-weight: bold;
 }
 
-/* Woocommerce Product Sorting */
+/* Woocommerce Product Listing Sorting */
 .woocommerce form.woocommerce-ordering {
     margin-right: 100px !important;
 }
@@ -265,28 +265,28 @@ button.single_add_to_cart_button:hover {
     color: #04295e;
 }
 
-/* Woocommerce Product Page Onsale Icon*/
+/* Woocommerce  Single Product Onsale Icon*/
 .woocommerce .product span.onsale {
     padding: 0;
     margin: 70px 0 0 120px;
     background-color: #5ebe6a !important;
 }
 
-/* Woocommerce Product Gallery*/
+/* Woocommerce Single Product Gallery*/
 .woocommerce .product .woocommerce-product-gallery {
     margin-top: 50px;
     margin-left: 100px;
     width: 38% !important;
 }
 
-/* Woocommerce Product Summary */
+/* Woocommerce Single Product Summary */
 .woocommerce .entry-summary {
     margin-top: 50px;
     margin-right: 100px;
     padding-left: 30px;  
 }
 
-/* Woocommerce Product Tabs and Related Products */
+/* Woocommerce Single Product Tabs  */
 .woocommerce .woocommerce-tabs,
 .woocommerce .related.products {
     max-width: 1320px !important;
@@ -294,29 +294,92 @@ button.single_add_to_cart_button:hover {
     margin: 50px auto !important;
 }
 
+/* Woocommerce Single Related Products */
 .woocommerce .related.products ul.products {
     margin-top: 20px !important;
 }
+
 
 /* Woocommerce Cart Page Block */
 .woocommerce-cart .wc-block-components-sidebar-layout.wc-block-cart {
     margin: 80px 100px !important;
 }
 
+.woocommerce-cart .wc-block-cart__empty-cart__title {
+    margin-top: 70px;
+}
+
+.woocommerce-cart .wp-block-heading {
+    margin-bottom: 50px;
+}
+
+.woocommerce-cart .wp-block-product-new {
+    max-width: 1320px !important;
+    padding-top: 30px !important;
+    margin: 50px auto !important;
+}
+
+
 /* Woocommerce Checkout Page Block */
 .woocommerce-checkout .wp-block-woocommerce-checkout {
     margin: 80px 100px !important;
 }
 
-/* Woocommerce My Accoung Block */
-.woocommerce #customer_login.u-columns {
+/* Woocommerce My Account Block */
+.woocommerce-account .woocommerce {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.woocommerce-account .woocommerce #customer_login.u-columns {
     margin: 80px 100px !important;
     width: 85% !important;
 }
 
-.woocommerce .u-column1,
-.woocommerce .u-column2 {
+.woocommerce-account .woocommerce .u-column1,
+.woocommerce-account .woocommerce .u-column2 {
     width: 45% !important;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-navigation {
+    width: 100% !important;
+    background-color: #5ebe6a !important;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 !important;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link {
+    padding: 20px !important;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link a {
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link a:hover {
+    color: #FFEE58 !important;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-content {
+    height: 320px;
+    max-width: 1320px !important;
+    padding-top: 30px !important;
+    margin: 50px auto !important;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-content p {
+    font-size: 18px;
 }
 
 /* Woocommerce Featured Category Block */
