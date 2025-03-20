@@ -45,4 +45,8 @@ git clone https://github.com/SharmJapay/Mifin-Demo-Project
 
 6. Setup Woocommerce. Go to Settings -> Accounts & Privacy. Uncheck options Checkout -> "Enable guest checkout (recommended)" and Account Creation -> Allow customers to create an account "During checkout".
 
-6. Test and check if the user authentication pop-up is working.
+7. Go to Appearance -> Themes and activate new custom theme named "SJ Demo Theme".
+
+8. Create Menu Structure for 'Primary Menu' and 'Seccondary Menu' display locations.
+
+9. Test and check if the user authentication pop-up is working.

@@ -1,3 +1,8 @@
+/* Body margin */
+.post, .page {
+    margin: 0 ;
+}
+
 /* General Navigation container Header and Footer*/
 header {
     display: flex;
@@ -147,10 +152,48 @@ button.single_add_to_cart_button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
+    background-color: #FFEE58;
+    padding: 40px 60px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: none;
+    z-index: 100;
+}
+
+.auth-button-container {
+    display: flex;;
+    justify-content: center;
+}
+
+.auth-button-container .login-button-container .login-btn {
+    cursor: pointer;
+    background-color: #cf2e2e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.auth-button-container .login-button-container .login-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.auth-popup .close-popup {
+    cursor: pointer;
+    background-color: #d6d6d6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-popup .close-popup:hover {
+    background-color: #fff;
 }
 
 
@@ -212,6 +255,11 @@ button.single_add_to_cart_button:hover {
     background-color: #5ebe6a !important;
 }
 
+/* Woocommerce Product Listing Onsale Icon*/
+.woocommerce ul.products li.product .added_to_cart {
+    margin-left: 20px;
+}
+
 /* Woocommerce Product Listing Title */
 .woocommerce h2.woocommerce-loop-product__title {
     color: #04295e;
@@ -258,6 +306,17 @@ button.single_add_to_cart_button:hover {
 /* Woocommerce Checkout Page Block */
 .woocommerce-checkout .wp-block-woocommerce-checkout {
     margin: 80px 100px !important;
+}
+
+/* Woocommerce My Accoung Block */
+.woocommerce #customer_login.u-columns {
+    margin: 80px 100px !important;
+    width: 85% !important;
+}
+
+.woocommerce .u-column1,
+.woocommerce .u-column2 {
+    width: 45% !important;
 }
 
 /* Woocommerce Featured Category Block */

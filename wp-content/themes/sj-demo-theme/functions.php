@@ -128,6 +128,9 @@ function sj_demo_theme_styles_scripts() {
 		_S_VERSION 
 	);
 
+	// Jquery
+	wp_enqueue_script('jquery');
+
 	// Bootstrap JS
     wp_enqueue_script(
 		'bootstrap-js', 
@@ -149,7 +152,7 @@ function sj_demo_theme_styles_scripts() {
 add_action( 'wp_enqueue_scripts', 'sj_demo_theme_styles_scripts' );
 
 /**
- * Registering custom menus.
+ * Registering Custom Navigation Menus.
  */
 function sj_demo_theme_register_nav_menus () {
 	register_nav_menus(
@@ -206,3 +209,44 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+/**
+* Redirecting user to My Account if not logged in during checkout process
+ */
+function check_if_logged_in(){
+	$pageid = get_option( 'woocommerce_checkout_page_id' );
+
+	if(!is_user_logged_in() && is_page($pageid)) {
+		$url = add_query_arg(
+			'redirect_to',
+			get_permalink($pageid),
+			site_url('/my-account/') // your my account url
+		);
+		wp_redirect($url);
+		exit;
+	}
+
+	if(is_user_logged_in())	{
+		if(is_page(get_option( 'woocommerce_myaccount_page_id' ))) {
+			$redirect = $_GET['redirect_to'];
+			if (isset($redirect)) {
+				echo '<script>window.location.href = "'.$redirect.'";</script>';
+			}
+		}
+	}
+}
+add_action('template_redirect','check_if_logged_in');
+
+
+/**
+ * Implementing user authentication pop-up if user is not logged-in during checkout
+ */
+
+function activate_authentication_popup() {
+    if (is_checkout() && !is_user_logged_in()) {
+        require get_template_directory() . '/woocommerce/checkout/auth-popup.php';
+    }
+
+}
+add_action('get_footer', 'activate_authentication_popup');
