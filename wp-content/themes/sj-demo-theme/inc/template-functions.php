@@ -35,3 +35,11 @@ function sj_demo_theme_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'sj_demo_theme_pingback_header' );
+
+
+/**
+ * Removes Product Description Tabs ('woocommerce_output_product_data_tabs') in 'woocommerce_after_single_product_summary' Hook
+ * Adds it to 'woocommerce_single_product_summary' hook
+ */
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 50 );
