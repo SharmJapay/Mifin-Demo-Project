@@ -39,6 +39,10 @@ git clone https://github.com/SharmJapay/Mifin-Demo-Project
 
 3. Install this WordPress to your local development environment.
 
-4. Install and activate plugins 
+4. Install and activate plugins (Woocommerce & WordPress Importer).
 
-5. Import the database file “sample_data.sql” found in db/ folder to your newly installed Wordpress using importer.
+5. Import the xml file found in db/ folder to your newly installed Wordpress using plugin WordPress Importer.
+
+6. Setup Woocommerce. Go to Settings -> Accounts & Privacy. Uncheck options Checkout -> "Enable guest checkout (recommended)" and Account Creation -> Allow customers to create an account "During checkout".
+
+6. Test and check if the user authentication pop-up is working.
