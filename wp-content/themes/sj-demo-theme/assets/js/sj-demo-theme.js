@@ -4,12 +4,19 @@ function toggleMenu() {
 }
 
 // Woocommerce Checkout Authentication Pop-up
-document.addEventListener("DOMContentLoaded", function () {
-    let popup = document.getElementById("auth-popup");
-    if (popup) {
-        popup.style.display = "block";
-        document.querySelector(".close-popup").addEventListener("click", function () {
-            popup.style.display = "none";
+jQuery(document).ready(function ($) {
+    if ($("#auth-popup").length) {
+        $("#auth-popup").fadeIn();
+
+        $(".close-popup").click(function () {
+            $("#auth-popup").fadeOut();
+        });
+
+        // Close pop-up when clicking outside the pop-up content
+        $(document).on("click", function (e) {
+            if (!$(e.target).closest(".popup-content").length && !$(e.target).is(".login-btn")) {
+                $("#auth-popup").fadeOut();
+            }
         });
     }
 });
