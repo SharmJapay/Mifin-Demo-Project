@@ -323,6 +323,7 @@ button.single_add_to_cart_button:hover {
 /* Woocommerce Checkout Page Block */
 .woocommerce-checkout .wp-block-woocommerce-checkout {
     margin: 80px 100px !important;
+    min-height: 40vh;
 }
 
 /* Woocommerce My Account Block */
